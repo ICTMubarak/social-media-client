@@ -21,6 +21,15 @@ const Navbar = () => {
     <div className="form-control">
       <input type="text" placeholder="Search" className="input input-bordered" />
     </div>
+    
+
+    {user?.email && <span>{user.email}</span>}
+    
+    
+    {console.log(user)}
+
+
+
     <div className="dropdown dropdown-end">
       <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
         <div className="w-10 rounded-full">
@@ -37,7 +46,7 @@ const Navbar = () => {
         <li><a>Settings</a></li>
         <li><Link to='/signup'>Sign up</Link></li>
         <li><Link to='/signin'>Sign in</Link></li>
-        <li><a>Signout</a></li>
+        <li><a><button onClick={handleLogout}>Sign out</button></a></li>
       </ul>
     </div>
   </div>
@@ -99,10 +108,7 @@ const Navbar = () => {
       //   <div className="navbar-end">
 
           
-      //   {user?.email && <span>{user.email}</span>}
-    
-      //   </div>
-      //   {console.log(user)}
+      
       // </div>
     );
 };

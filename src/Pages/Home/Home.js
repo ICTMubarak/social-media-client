@@ -1,9 +1,10 @@
 import React from 'react';
+import AddStatus from '../AddSatus/AddStatus';
 
 const Home = () => {
     return (
         <div>
-            <h1>home</h1>
+            <AddStatus></AddStatus>
             
         </div>
     );
