@@ -18,7 +18,7 @@ const router = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>,
-                loader: ()  => fetch('http://localhost:5000/allstatus')
+                loader: ()  => fetch('https://social-media-server-alpha.vercel.app/allstatus')
             },          
             {
                 path: '/messanger',

@@ -6,7 +6,7 @@ const AddStatus = () => {
 
     const handleAddStatus = event =>{
         event.preventDefault();
-        fetch('http://localhost:5000/addstatus', {
+        fetch('https://social-media-server-alpha.vercel.app/addstatus', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
