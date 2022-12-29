@@ -40,7 +40,7 @@ const AddStatus = () => {
         <br /><br />
         <form onSubmit={handleAddStatus}>
                 Input the Status: 
-                <input onBlur={handleInputBlur} type="text" name="catagory" placeholder='write your status' required/>
+                <input onBlur={handleInputBlur} type="text" name="description" placeholder='write your status' required/>
                 <br/><br />
                 Input the Satus picture's URL: 
                 <input onBlur={handleInputBlur} type="text" name="pic" placeholder='Product picture url' required/>

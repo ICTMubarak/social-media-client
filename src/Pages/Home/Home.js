@@ -12,7 +12,7 @@ const Home = () => {
 
             <section>
                 <h1 class="text-center font-bold text-2xl">All Status</h1>
-                <div  class="grid grid-cols-1 gap-2 border-4 gap-4 md:grid-cols-3">
+                <div  class="grid justify-center">
             {
                 allStatus.map(status => <Status key={status._id} status={status}></Status>)
             }

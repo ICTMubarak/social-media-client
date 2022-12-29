@@ -18,6 +18,7 @@ const Navbar = () => {
     <a className="btn btn-ghost normal-case text-xl">BDBook.com</a>
   </div>
   <div className="flex-none gap-2">
+  <Link to='/'>Home</Link>
     <div className="form-control">
       <input type="text" placeholder="Search" className="input input-bordered" />
     </div>
@@ -43,7 +44,8 @@ const Navbar = () => {
             <span className="badge">New</span>
           </a>
         </li>
-        <li><a>Settings</a></li>
+        <li><Link to='/profile'>Profile</Link></li>
+        <li><Link to='/setting'>Setting</Link></li>
         <li><Link to='/signup'>Sign up</Link></li>
         <li><Link to='/signin'>Sign in</Link></li>
         <li><a><button onClick={handleLogout}>Sign out</button></a></li>

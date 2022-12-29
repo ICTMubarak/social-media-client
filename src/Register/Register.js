@@ -40,7 +40,7 @@ import { AuthContext } from '../contexts/UserContext';
         <div className="hero min-h-screen bg-base-200" class="col-span-5 border-2">
         <div className="hero-content flex-col">
           <div className="text-center lg:text-left">
-            <h1 className="text-5xl font-bold">----- Register -----</h1>
+            <h1 className="text-5xl font-bold">----- Sign Up-----</h1>
           </div>
           <form onSubmit={handleSubmit} className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
             <div className="card-body">
