@@ -19,6 +19,8 @@ const Navbar = () => {
   </div>
   <div className="flex-none gap-2">
   <Link to='/'>Home</Link>
+  <Link to='/messanger'>Messanger</Link>
+  <Link to='/notifications'>Notifications</Link>
     <div className="form-control">
       <input type="text" placeholder="Search" className="input input-bordered" />
     </div>

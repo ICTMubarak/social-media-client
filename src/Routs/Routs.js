@@ -1,4 +1,6 @@
 import Login from "../Login/Login";
+import Messanger from "../Pages/Messanger/Messanger";
+import Notifications from "../Pages/Notifications/Notifications";
 import Profile from "../Pages/Profile/Profile";
 import Setting from "../Pages/Setting/Setting";
 import Register from "../Register/Register";
@@ -17,6 +19,14 @@ const router = createBrowserRouter([
                 path: '/',
                 element: <Home></Home>,
                 loader: ()  => fetch('http://localhost:5000/allstatus')
+            },          
+            {
+                path: '/messanger',
+                element: <Messanger></Messanger>,
+            },          
+            {
+                path: '/notifications',
+                element: <Notifications></Notifications>,
             },          
             {
                 path: '/profile',
